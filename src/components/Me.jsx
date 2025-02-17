@@ -5,7 +5,7 @@ import Cursor from "./Cursor";
 import Social from "./Social";
 import Link from "next/link";
 import MeImg from "/public/me.jpeg";
-import { buttonVariants } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import "animate.css";
 
 export default function Me() {
@@ -64,14 +64,14 @@ export default function Me() {
               >
                 Yechimlar
               </Link>
-              <Link
-                className={`${buttonVariants({
-                  variant: "outline",
-                })} animate__animated animate__fadeInUp animate__delay-3s`}
-                href="/me/"
-              >
-                Haqimda
-              </Link>
+              <a href="/oyatillo-frontend-resume.pdf" download>
+                <Button
+                  variant="outline"
+                  className={`animate__animated animate__fadeInUp animate__delay-3s text-black`}
+                >
+                  Haqimda
+                </Button>
+              </a>
             </div>
           </div>
         </div>
